@@ -15,7 +15,7 @@ const skills = [
 
 export function Skills({ lightMode }: { lightMode: boolean }) {
   return (
-    <section id="skills" className="scroll-mt-8 px-8 py-20 text-center sm:px-10">
+    <section id="skills" className="scroll-mt-8 px-8 py-12 text-center sm:px-10 sm:py-14">
       <h2 className="mb-12 text-4xl font-bold sm:text-5xl">Skills</h2>
       <div className="mx-auto grid max-w-[1500px] grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         {skills.map((skill) => (

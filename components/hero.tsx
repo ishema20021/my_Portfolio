@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Hero({ lightMode }: { lightMode: boolean }) {
   return (
-    <section className="mx-auto grid max-w-[1600px] items-center gap-12 px-8 py-12 lg:grid-cols-2 lg:px-16">
+    <section className="mx-auto grid max-w-[1600px] items-center gap-12 px-8 py-8 lg:grid-cols-2 lg:px-16">
       <div>
         <p className="mb-6 font-semibold uppercase tracking-widest text-orange-500">
           Available for work

@@ -6,6 +6,9 @@ import { Hero } from "../components/hero";
 import { About } from "../components/sections/about";
 import { Skills } from "../components/sections/skills";
 import { Education } from "../components/sections/education";
+import { Certifications } from "../components/sections/certifications";
+import { Experience } from "../components/sections/experience";
+import { Contact } from "../components/sections/contact";
 
 export default function Home() {
   const [lightMode, setLightMode] = useState(false);
@@ -18,6 +21,9 @@ export default function Home() {
         <About lightMode={lightMode} />
         <Skills lightMode={lightMode} />
         <Education lightMode={lightMode} />
+        <Experience lightMode={lightMode} />
+        <Certifications lightMode={lightMode} />
+        <Contact lightMode={lightMode} />
       </div>
     </main>
   );

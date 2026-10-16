@@ -9,8 +9,8 @@ const education = [
 
 export function Education({ lightMode }: { lightMode: boolean }) {
   return (
-    <section id="education" className="scroll-mt-8 px-8 py-20 sm:px-10">
-      <h2 className="mb-16 text-center text-4xl font-bold sm:text-5xl">Education</h2>
+    <section id="education" className="scroll-mt-8 px-8 py-12 sm:px-10 sm:py-14">
+      <h2 className="mb-10 text-center text-4xl font-bold sm:text-5xl">Education</h2>
       <div className="mx-auto max-w-6xl space-y-10">
         {education.map((item) => (
           <article key={item.title} className="border-l-4 border-cyan-500 py-1 pl-8">
