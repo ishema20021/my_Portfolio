@@ -17,7 +17,7 @@ const navItems = [
 export function Header({ lightMode, onThemeToggle }: HeaderProps) {
   return (
     <header className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-8 py-7 sm:px-10 lg:px-16">
-      <div className={`flex items-center text-4xl font-black tracking-[-0.08em] ${lightMode ? "text-gray-900" : "text-white"}`}>
+      <div className={`flex items-center text-4xl font-bold tracking-[-0.04em] ${lightMode ? "text-gray-900" : "text-white"}`}>
         <span>Ange</span>
       </div>
 
@@ -39,12 +39,12 @@ export function Header({ lightMode, onThemeToggle }: HeaderProps) {
           {lightMode ? "☾" : "☀"}
         </button>
 
-        <button
-          type="button"
-          className="rounded-full bg-[#ff7a1a] px-6 py-3 text-base font-semibold text-white shadow-[0_14px_28px_rgba(255,122,26,0.35)]"
+        <a
+          href="#contact"
+          className="rounded-full bg-accent px-6 py-3 text-base font-semibold text-white shadow-[0_14px_28px_rgba(59,130,246,0.35)] transition hover:bg-accent-hover"
         >
           Hire me <span className="ml-2">→</span>
-        </button>
+        </a>
       </div>
     </header>
   );

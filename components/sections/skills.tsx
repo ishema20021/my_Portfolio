@@ -16,14 +16,14 @@ const skills = [
 export function Skills({ lightMode }: { lightMode: boolean }) {
   return (
     <section id="skills" className="scroll-mt-8 px-8 py-12 text-center sm:px-10 sm:py-14">
-      <h2 className="mb-12 text-4xl font-bold sm:text-5xl">Skills</h2>
+      <h2 className="mb-12 text-4xl font-bold tracking-tight sm:text-5xl">Skills</h2>
       <div className="mx-auto grid max-w-[1500px] grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         {skills.map((skill) => (
           <article
             key={skill.name}
             className={`rounded-xl border p-6 ${lightMode ? "border-gray-200 bg-gray-50" : "border-white/10 bg-white/5"}`}
           >
-            <p className="mb-5 text-2xl font-bold text-indigo-500" aria-hidden="true">
+            <p className="mb-5 text-2xl font-bold text-accent" aria-hidden="true">
               {skill.mark}
             </p>
             <h3 className="mb-2 text-lg font-semibold">{skill.name}</h3>

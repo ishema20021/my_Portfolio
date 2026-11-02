@@ -9,7 +9,7 @@ const experience = [
 export function Experience({ lightMode }: { lightMode: boolean }) {
   return (
     <section id="experience" className="scroll-mt-8 px-8 py-12 sm:px-10 sm:py-14">
-      <h2 className="mb-10 text-center text-4xl font-bold sm:text-5xl">
+      <h2 className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">
         Experience
       </h2>
       <div className="mx-auto max-w-6xl space-y-10">

@@ -50,7 +50,7 @@ const certifications = [
 export function Certifications({ lightMode }: { lightMode: boolean }) {
   return (
     <section id="certification" className="scroll-mt-8 px-8 py-12 sm:px-10 sm:py-14">
-      <h2 className="mb-10 text-center text-4xl font-bold sm:text-5xl">
+      <h2 className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">
         Certifications
       </h2>
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
@@ -80,7 +80,7 @@ export function Certifications({ lightMode }: { lightMode: boolean }) {
                   href={`/certificates/${certification.file}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-orange-500 hover:underline"
+                  className="font-semibold text-accent hover:underline"
                 >
                   View Certificate
                 </a>
