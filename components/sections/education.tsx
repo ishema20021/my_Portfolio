@@ -9,11 +9,11 @@ const education = [
 
 export function Education({ lightMode }: { lightMode: boolean }) {
   return (
-    <section id="education" className="scroll-mt-8 px-8 py-12 sm:px-10 sm:py-14">
-      <h2 className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">Education</h2>
+    <section id="education" className="scroll-mt-24 px-8 py-12 sm:px-10 sm:py-14">
+      <h2 data-reveal className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">Education</h2>
       <div className="mx-auto max-w-6xl space-y-10">
         {education.map((item) => (
-          <article key={item.title} className="border-l-4 border-accent py-1 pl-8">
+          <article key={item.title} data-reveal className="border-l-4 border-accent py-1 pl-8">
             <h3 className="text-2xl font-bold">{item.title}</h3>
             <p className={`mt-3 text-lg ${lightMode ? "text-gray-700" : "text-white/80"}`}>
               {item.place} <span className="mx-1">|</span> {item.dates}

@@ -1,6 +1,6 @@
 export function About({ lightMode }: { lightMode: boolean }) {
   return (
-    <section id="about" className="mx-auto max-w-4xl scroll-mt-8 px-8 py-16 text-center sm:px-10 sm:py-24">
+    <section id="about" className="mx-auto max-w-4xl scroll-mt-24 px-8 py-16 text-center sm:px-10 sm:py-24" data-reveal>
       <p className="mb-4 font-semibold uppercase tracking-[0.2em] text-accent">
         A bit about me
       </p>

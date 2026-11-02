@@ -49,19 +49,16 @@ const certifications = [
 
 export function Certifications({ lightMode }: { lightMode: boolean }) {
   return (
-    <section id="certification" className="scroll-mt-8 px-8 py-12 sm:px-10 sm:py-14">
-      <h2 className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">
+    <section id="certification" className="scroll-mt-24 px-8 py-12 sm:px-10 sm:py-14">
+      <h2 data-reveal className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">
         Certifications
       </h2>
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
         {certifications.map((certification) => (
           <article
             key={certification.title}
-            className={`rounded-2xl border px-6 py-8 text-center ${
-              lightMode
-                ? "border-gray-200 bg-white"
-                : "border-white/10 bg-white/[0.04]"
-            }`}
+            data-reveal
+            className="glass glow-hover rounded-2xl px-6 py-8 text-center"
           >
             <h3 className="text-xl font-bold sm:text-2xl">
               {certification.title}

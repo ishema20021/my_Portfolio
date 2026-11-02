@@ -8,17 +8,16 @@ const experience = [
 
 export function Experience({ lightMode }: { lightMode: boolean }) {
   return (
-    <section id="experience" className="scroll-mt-8 px-8 py-12 sm:px-10 sm:py-14">
-      <h2 className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">
+    <section id="experience" className="scroll-mt-24 px-8 py-12 sm:px-10 sm:py-14">
+      <h2 data-reveal className="mb-10 text-center text-4xl font-bold tracking-tight sm:text-5xl">
         Experience
       </h2>
       <div className="mx-auto max-w-6xl space-y-10">
         {experience.map((item) => (
           <article
             key={item.title}
-            className={`border-l-4 py-1 pl-8 ${
-              lightMode ? "border-gray-200" : "border-white/15"
-            }`}
+            data-reveal
+            className="border-l-4 border-accent py-1 pl-8"
           >
             <h3 className="text-2xl font-bold">{item.title}</h3>
             <p

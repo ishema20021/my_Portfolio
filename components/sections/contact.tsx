@@ -9,8 +9,8 @@ export function Contact({ lightMode }: { lightMode: boolean }) {
   }`;
 
   return (
-    <section id="contact" className="scroll-mt-8 px-8 py-12 sm:px-10 sm:py-14">
-      <div className="mx-auto max-w-6xl">
+    <section id="contact" className="scroll-mt-24 px-8 py-12 sm:px-10 sm:py-14">
+      <div data-reveal className="glass mx-auto max-w-6xl rounded-3xl p-8 sm:p-12">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
           Contact
         </p>
